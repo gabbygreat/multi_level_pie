@@ -15,6 +15,7 @@ class MultiLevelPieChart extends StatelessWidget {
   final TextStyle? labelTextStyle;
   final TextStyle? percentTextStyle;
   final bool hidePercentageLabel;
+  final MainAxisAlignment mainAxisAlignment;
 
   const MultiLevelPieChart({
     super.key,
@@ -29,12 +30,14 @@ class MultiLevelPieChart extends StatelessWidget {
     this.labelTextStyle,
     this.percentTextStyle,
     this.hidePercentageLabel = false,
+    this.mainAxisAlignment = MainAxisAlignment.start,
   });
 
   @override
   Widget build(BuildContext context) {
     return Row(
       textDirection: textDirection,
+      mainAxisAlignment: mainAxisAlignment,
       children: [
         CustomPaint(
           size: Size(chartSize, chartSize),
