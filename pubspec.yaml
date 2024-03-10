@@ -1,7 +1,7 @@
 name: multi_level_pie
 description: "Create beautiful multi-level-pie chart with detailed information"
 version: 0.0.1
-homepage:
+homepage: https://github.com/gabbygreat/multi_level_pie
 
 environment:
   sdk: ">=3.2.3 <4.0.0"
